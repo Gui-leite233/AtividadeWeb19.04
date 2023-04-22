@@ -67,3 +67,10 @@
   color: rgb(255, 255, 255);
   background-color: rgb(47, 52, 126);
 }
+
+
+h1{
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  color: aliceblue;
+}
