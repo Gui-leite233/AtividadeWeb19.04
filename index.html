@@ -4,29 +4,72 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Tarefa dia 19/04</title>
+    <title>Document</title>
   </head>
   <body>
-    <form action="/cadastro" method="post">
-      <div class="cadastro-usuario">
-        <label for="usuario" >Usuário:</label>
-        <input type="text" name="usuario" id="usuario"  placeholder="Escreva o nome do seu usuário"/>
+    <div class="container">
+      <!--Todos os cards devem ficar nessa div-->
+
+      <div class="card">
+        <div class="card__imagem">
+          <figure>
+            <img src="./img/gow.jpg" alt="imagem god of war play 2">
+          </figure>
+        </div>
+
+        <div class="card__descricao">
+          <h2>God of war - original</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam sit alias a nulla nemo. Recusandae dignissimos qui, beatae quasi consequatur, dolorem rem quod eum ab repellat modi blanditiis maxime! Vitae.
+
+          </p>
+        </div>
+
+        <div class="card__botao">
+          <button><a href="">Saiba mais</a></button>
+        </div>
       </div>
 
-      <div class="cadastro-senha">
-        <label for="senha">Senha:</label>
-        <input type="password" name="senha" id="senha" placeholder="Escreva sua senha"/>
+      <div class="card">
+        <div class="card__imagem">
+          <figure>
+            <img src="./img/crashbdc.jpg" alt="imagem crash bandicoot play 2">
+          </figure>
+        </div>
+
+        <div class="card__descricao">
+          <h2>Crash Bandicoot - original</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam sit alias a nulla nemo. Recusandae dignissimos qui, beatae quasi consequatur, dolorem rem quod eum ab repellat modi blanditiis maxime! Vitae.
+
+          </p>
+        </div>
+
+        <div class="card__botao">
+          <button><a href="">Saiba mais</a></button>
+        </div>
       </div>
 
-      <div class="login">
-        <button type="submit">Login</button>
-      </div>
+      <div class="card">
+        <div class="card__imagem">
+          <figure>
+            <img src="./img/nfscrbn.jpg" alt="imagem need for speed play 2">
+          </figure>
+        </div>
 
-      <div class="mensagem">
-        <label for="mensagem">Escreva sua mensagem abaixo</label>
-        <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+        <div class="card__descricao">
+          <h2>Need for speed: Carbon</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam sit alias a nulla nemo. Recusandae dignissimos qui, beatae quasi consequatur, dolorem rem quod eum ab repellat modi blanditiis maxime! Vitae.
+
+          </p>
+        </div>
+
+        <div class="card__botao">
+          <button><a href="">Saiba mais</a></button>
+        </div>
       </div>
-    </form>
+    </div>
   </body>
 </html>
