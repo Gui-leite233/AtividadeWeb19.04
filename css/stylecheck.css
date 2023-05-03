@@ -6,7 +6,7 @@
   
 }
 
-body main{
+body{
   background-image: url("../img/OIP.png");
   
 }
@@ -39,11 +39,65 @@ h1 {
   height: 500px;
   left: 40%;
   top: 30%;
-  background-color: rgb(8, 8, 8, 0.5);
+  background-color: rgb(8, 8, 8, 0.7);
   border-radius: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 label{
   color: white;
+  margin: 10px;
 }
 
+.checkmark {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+}
+
+input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.card:hover input ~ .checkmark {
+  background-color: #ccc;
+  transition: 0.3s;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 6px;
+  top: 5px;
+  width: 5px;
+  height: 5px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.card{
+  margin: 10px;
+}
