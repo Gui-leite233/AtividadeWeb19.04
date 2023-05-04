@@ -39,7 +39,7 @@ h1 {
   height: 500px;
   left: 40%;
   top: 30%;
-  background-color: rgb(8, 8, 8, 0.7);
+  background-color: rgb(8, 8, 8, 0.8);
   border-radius: 20px;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -70,6 +70,7 @@ input {
 .card:hover input ~ .checkmark {
   background-color: #ccc;
   transition: 0.3s;
+  margin-le: 5px;
 }
 
 .container input:checked ~ .checkmark {
@@ -87,7 +88,7 @@ input {
 }
 
 .container .checkmark:after {
-  left: 6px;
+  left: 7px;
   top: 5px;
   width: 5px;
   height: 5px;
@@ -101,3 +102,4 @@ input {
 .card{
   margin: 10px;
 }
+
